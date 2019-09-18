@@ -1,6 +1,5 @@
-import matplotlib
-matplotlib.use('agg')
-import matplotlib.pyplot as plt
+#import matplotlib
+#import matplotlib.pyplot as plt
 import math
 import random
 
@@ -32,9 +31,8 @@ for i in values:
     plot.append("{:.2f}".format(average))
     count = 0
     print("Pad Count: ", i, "\tAverage: ", "{:.2f}".format(average))
-
-plt.plot(values,plot)
-plt.ylim([0, round(float(max(plot)))+1])
-plt.show()
-plt.savefig('test.png')
+#cannot get matplotlib to work correctly with floats. discarding for now.
+#plt.plot(values,plot)
+#plt.show()
+#plt.savefig('test.png')
 
